@@ -39,13 +39,13 @@ class AppSettingsTableSeeder extends Seeder
             array (
                 'id' => 18,
                 'key' => 'app_name',
-                'value' => 'Food Delivery',
+                'value' => 'My Restaurant',
             ),
             4 => 
             array (
                 'id' => 19,
                 'key' => 'app_short_description',
-                'value' => 'Manage Mobile Application',
+                'value' => 'Manage Application',
             ),
             5 => 
             array (
@@ -69,7 +69,7 @@ class AppSettingsTableSeeder extends Seeder
             array (
                 'id' => 23,
                 'key' => 'mail_username',
-                'value' => 'fooddelivery@smartersvision.com',
+                'value' => 'myrestaurant@gmail.com',
             ),
             9 => 
             array (
@@ -87,13 +87,13 @@ class AppSettingsTableSeeder extends Seeder
             array (
                 'id' => 26,
                 'key' => 'mail_from_address',
-                'value' => 'fooddelivery@smartersvision.com',
+                'value' => 'myrest@gmail.com',
             ),
             12 => 
             array (
                 'id' => 27,
                 'key' => 'mail_from_name',
-                'value' => 'Smarter Vision',
+                'value' => 'My Restaurant',
             ),
             13 => 
             array (

@@ -56,12 +56,16 @@ class Handler extends ExceptionHandler
             }
             return response()->view('vendor.errors.page', ['code' => 404, 'message' => trans('error.page.not_found')]);
         }
-        if ($exception instanceof UnauthorizedException) {
-            if ($request->ajax()) {
-                return response()->json(['error' => $exception->getMessage()], 403);
-            }
-            return response()->view('vendor.errors.page', ['code' => 403, 'message' => $exception->getMessage()]);
-        }
+        // have just included it
+        if ($exception instanceof \Spatie\Permission\Exceptions\UnauthorizedException) {
+            return redirect('/');
+      }
+        // if ($exception instanceof UnauthorizedException) {
+        //     if ($request->ajax()) {
+        //         return response()->json(['error' => $exception->getMessage()], 403);
+        //     }
+        //     return response()->view('vendor.errors.page', ['code' => 403, 'message' => $exception->getMessage()]);
+        // }
         if ($exception instanceof AuthenticationException) {
             if ($request->ajax()) {
                 return response()->json(['error' => $exception->getMessage()], 401);
